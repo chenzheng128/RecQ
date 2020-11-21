@@ -96,7 +96,7 @@ class IF_BPR(SocialRecommender):
         p5 = 'UFUIU'
         mPaths = [p1, p2, p3, p4, p5]
 
-        #定义权值
+        #定义权值 G，W 区别？
         self.G = np.random.rand(self.data.trainingSize()[0], self.walkDim) * 0.1
         self.W = np.random.rand(self.data.trainingSize()[0], self.walkDim) * 0.1
         #构建信任网络
